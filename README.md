@@ -1,2 +1,4 @@
 # QUBE
-QUBE is a 4-faced audio-reactive cube made of 4, 40x40-pixel LED panels. I used this for a festival totem. All electronics work done by myself. Coded with help from Claude Opus 5, verified by myself. Feel free to show me if you make anything out of this and feel free to let me know about bugs!
+QUBE is a 4-faced audio-reactive cube made of 4, 40x40-pixel LED panels. I used this for a festival totem. 
+  -- All electronics work done by myself. Software code written with help from Claude Opus 5; and edited, toyed with, and verified by myself.
+  -- All 3D design and model work for the housing was done by my lovely fiance, so I did not include those files, but they are available on request if you are building the same one :)
