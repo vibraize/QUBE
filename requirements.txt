@@ -1,0 +1,11 @@
+# For running the preview on a regular computer (Windows, macOS, Linux):
+#     python -m pip install -r requirements.txt
+# On the Raspberry Pi, install packages with apt instead (see README).
+#
+# PyAudio is optional on a computer - it's only needed to use a real microphone.
+# Without it, run main.py with --fake-audio.
+#
+# segno is optional too, and only on a computer: tools/make_qr.py uses it to rebuild the
+# QR code if you change the link. QUBE itself never needs it - the code is baked
+# into visuals/qr_code.py.
+numpy

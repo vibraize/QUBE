@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+
+# Output of tools/render_frames.py
+renders/
+
+# Photos. Phone cameras write EXIF metadata into every picture - often including the
+# GPS position where it was taken, the phone model and the time. None of that should
+# be published by accident, so photos are ignored everywhere except docs/images/, and
+# anything put there must have its metadata stripped first.
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.heic
+*.HEIC
+!docs/images/*.jpg
+!docs/images/*.jpeg
+
+# Local tool and OS clutter
+.claude/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

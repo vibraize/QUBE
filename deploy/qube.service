@@ -1,0 +1,24 @@
+# deploy/qube.service - template used by deploy/install_service.sh, which
+# fills in __PYTHON__, __PROJECT__ and __DISPLAY__. Don't copy this file by hand.
+
+[Unit]
+Description=QUBE, the audio-reactive LED cube
+After=sound.target
+# Never stop trying to restart it, however often that happens
+StartLimitIntervalSec=0
+
+[Service]
+ExecStart=__PYTHON__ "__PROJECT__/main.py" --display __DISPLAY__
+WorkingDirectory=__PROJECT__
+# Show print() output in the journal right away
+Environment=PYTHONUNBUFFERED=1
+# Start it again whenever it exits, crashes or freezes
+Restart=always
+RestartSec=3
+# The main loop pings systemd. If the pings stop for 30 s (frozen), systemd restarts it.
+WatchdogSec=30
+# Time allowed to clean up (panels dark, mic closed) when stopped
+TimeoutStopSec=10
+
+[Install]
+WantedBy=multi-user.target

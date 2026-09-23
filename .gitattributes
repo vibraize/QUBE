@@ -1,0 +1,4 @@
+# Keep Linux line endings (LF) in every text file, even when the repository is checked out
+# on Windows. A copy made there and moved to the Pi still runs: bash and systemd don't
+# accept Windows line endings.
+* text=auto eol=lf
